@@ -206,7 +206,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    lights.msm8996
+    lights.qcom
 
 # LiveDisplay native
 PRODUCT_PACKAGES += \
