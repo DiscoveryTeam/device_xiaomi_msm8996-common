@@ -77,6 +77,9 @@ sys.fpc.tu.disabled=0
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
+# Google
+ro.opa.eligible_device=true
+
 # Graphics
 debug.egl.hw=1
 debug.gralloc.enable_fb_ubwc=1
