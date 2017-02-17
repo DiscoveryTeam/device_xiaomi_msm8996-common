@@ -24,8 +24,16 @@ import android.provider.Settings;
 import android.util.Log;
 import android.view.KeyEvent;
 
+<<<<<<< HEAD
 import com.cyanogenmod.settings.device.utils.DeviceKeyHandler;
 import com.cyanogenmod.settings.device.utils.FileUtils;
+=======
+import com.android.internal.os.DeviceKeyHandler;
+
+import org.cyanogenmod.internal.util.FileUtils;
+
+import cyanogenmod.hardware.CMHardwareManager;
+>>>>>>> 6cb7a98... gemini: Replace variable for setup wizard complete
 
 public class KeyHandler implements DeviceKeyHandler {
 
@@ -75,5 +83,10 @@ public class KeyHandler implements DeviceKeyHandler {
             }
         }
         return false;
+    }
+
+    private boolean hasSetupCompleted() {
+        return Settings.Secure.getInt(mContext.getContentResolver(),
+                Settings.Secure.USER_SETUP_COMPLETE, 0) != 0;
     }
 }
