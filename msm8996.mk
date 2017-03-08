@@ -35,9 +35,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
-# HWUI overrides
-$(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk)
-
 # Permissions
 PRODUCT_COPY_FILES += \
     external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:system/etc/permissions/com.dsi.ant.antradio_library.xml \
@@ -117,12 +114,12 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:/system/etc/usb_audio_policy_configuration.xml
 
 # Browser
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     Gello
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap
+    SnapdragonCamera
 
 # CNE
 PRODUCT_PACKAGES += \
@@ -155,14 +152,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/calib.cfg:system/etc/calib.cfg
 
-# Doze mode
-PRODUCT_PACKAGES += \
-    XiaomiDoze
+# Xiaomi
+#PRODUCT_PACKAGES += \
+    XiaomiDoze \
+    XiaomiPocketMode
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    fingerprintd \
-    XiaomiPocketMode
+    fingerprintd
 
 # For android_filesystem_config.h
 PRODUCT_PACKAGES += \
