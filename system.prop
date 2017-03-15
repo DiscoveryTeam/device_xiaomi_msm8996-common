@@ -150,6 +150,9 @@ persist.data.df.dev_name=rmnet_usb0
 # Storage
 ro.sys.sdcardfs=true
 
+# Tethering
+net.tethering.noprovisioning=true
+
 # TimeService
 persist.timed.enable=true
 
