@@ -66,8 +66,7 @@ public class Startup extends BroadcastReceiver {
     }
 
     static boolean hasButtonProcs() {
-        return new File(Constants.BUTTON_SWAP_NODE).exists() ||
-                new File(Constants.FP_HOME_KEY_NODE).exists() ||
+        return new File(Constants.FP_HOME_KEY_NODE).exists() ||
                 new File(Constants.FP_WAKEUP_NODE).exists();
     }
 
