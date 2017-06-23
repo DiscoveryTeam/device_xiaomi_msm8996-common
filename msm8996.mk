@@ -125,7 +125,6 @@ PRODUCT_PACKAGES += \
 
 # Common config scripts
 PRODUCT_PACKAGES += \
-    init.cnss.sh \
     init.panel.sh
 
 # Common init scripts
@@ -276,6 +275,7 @@ PRODUCT_PACKAGES += \
     libQWiFiSoftApCfg \
     libwpa_client \
     hostapd \
+    readfem \
     readmac \
     wpa_supplicant \
     wpa_supplicant.conf
